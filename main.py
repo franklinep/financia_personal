@@ -17,5 +17,4 @@ def startup_db_client():
 def shutdown_db_client():
     app.mongodb_client.close()
 
-# Include the router and specify a prefix
 app.include_router(finanzas_router, prefix="/finanzas", tags=["usuarios"])
